@@ -64,5 +64,209 @@ header{
         cursor: pointer;
         text-decoration: none;
         color: #2E7D32;
+        
     }
+}
+.menu2{
+    color: #1B5E20;
+    font-size: 20px;
+}
+.hero-img{
+    width: 100%;
+}
+.hero{
+    background-image: url(./IMAGES/accueil_principal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   height: 900px;
+   margin-top: -45px;
+}
+.hero-text{
+    h1{
+        font-size: 64px;
+        color: #2E7D32;
+        margin-left: 40px;
+
+    }
+    h2{
+       font-size: 80px; 
+       margin-left: 40px;
+       color: #2E7D32;
+       font-family: 'Island Moments';
+    }
+    p{
+        color: #2E7D32;
+        font-size: 60px;
+        margin-left: 40px;
+    }
+}
+
+button{
+    padding: 20px;
+    background: #2E7D32;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.hero-text1{
+    background-color: #F1F8F4;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  background: #F1F8F4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.feature {
+  text-align: center;
+  flex: 1;
+}
+
+
+.feature h3 {
+  color: #2e7d32;
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.feature p {
+  color: #2e7d32;
+  font-size: 20px;
+}
+.produit{
+  padding:40px;
+  text-align:center;
+  font-size: 70px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+color: #2E7D32;
+}
+.card {
+  width: 15%;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: black;
+  margin-left: 1%;
+  
+}
+
+
+
+.prix {
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.ajouter {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 40%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+.desc{
+    font-size: 18px;
+  margin: 10px 0 5px;
+  color: black;
+  margin-left: 1%;
+}
+.card1 {
+  width: 15%;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.card1 img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+
+.card1 h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: black;
+  margin-left: 1%;
+  
+}
+
+
+
+.prix {
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.ajouter {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 40%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+.desc{
+    font-size: 18px;
+  margin: 10px 0 5px;
+  color: black;
+  margin-left: 1%;
+}
+.produit-img{
+    display: flex;
+    justify-content: space-around;
+}
+.produit-img1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
 }
