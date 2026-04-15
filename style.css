@@ -270,3 +270,213 @@ button:hover {
     justify-content: space-around;
     margin-top: 10%;
 }
+
+
+.conseils{
+  background-image: url(./IMAGES/ACCUEIL_FEMME.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+  padding: 40px;
+
+}
+.tite{
+  color: #2E7D32;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.conseils p{
+  font-size: 32px;
+  color: #2E7D32;
+}
+.lis{
+  color: #2E7D32;
+  font-size: 20px;
+}
+li {
+  color: #2E7D32;
+  font-size: 24px;
+  font-weight: bold;
+  list-style: none; 
+  margin-bottom: 40px;
+}
+.article{
+  margin-top: 5%;
+  margin-left: 30%;
+  border-radius: 3%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.promo{
+  background-image: url(./IMAGES/ACCUEILPROMO.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+  padding: 40px;
+}
+.promo-section{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 30px;
+}
+.til-promo{
+  color: #2E7D32;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.promos{
+  color: #FF8F00;
+  font-size: 26px;
+  text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
+}
+.tile-promo{
+  font-weight: bold;
+  font-size: 50px;
+  color: #2E7D32;
+  text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
+
+}
+.ofres{
+  background-color: #FF8F00;
+  margin-top: 5%;
+  margin-left: 30%;
+  border-radius: 3%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+footer{
+  background-color: #2E7D32;
+}
+.logo{
+  color: white;
+}
+.instagram-icon {
+color: white;
+  transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+  color: #C13584; 
+  transform: scale(1.1);
+}
+.tiktok-icon {
+  color: white; 
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tiktok-icon:hover {
+  color: #ff0050; 
+  transform: scale(1.1);
+}
+.whatsapp-icon {
+  color: #25D366; 
+  transition: all 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  color: #128C7E; 
+  transform: scale(1.1); 
+}
+.footer1{
+  p{
+    font-size: 20px;
+  }
+ padding: 40px;
+}
+.fots{
+  display: flex;
+  justify-content: space-around;
+}
+.footer2 h1{
+font-size: 16px;
+color: white;
+margin-top: 20%;
+}
+.foot2{
+  font-size: 2rem;
+  color: white;
+}
+.phone { 
+  gap: 10px; 
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+  padding-top: 10px;  
+ 
+}
+
+.phone-number {
+  font-size: 1.1rem;
+}
+
+.phone:hover {
+  color: #007aff;
+}
+
+.phone:hover .phone-icon {
+  transform: rotate(-15deg);
+}
+.email {  
+  gap: 12px;            
+  text-decoration: none;
+  color: white;       
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding-top: 10px;  
+}
+
+.email:hover {
+  color: #2563eb;      
+}
+
+.email-icon {
+  transition: transform 0.3s ease;
+}
+
+.email:hover .email-icon {
+  transform: translateY(-2px); 
+}
+.location-container {
+  align-items: center;  
+  gap: 10px;            
+  color: white; 
+ padding-top: 10px;        
+}
+
+.location-icon {
+  color: white;       
+  transition: transform 0.3s ease;
+}
+
+.location-container:hover .location-icon {
+  transform: translateY(-3px); 
+}
+.agenda-container {
+  align-items: center;  
+  color: white;          
+  font-weight: bold;
+  padding-top: 10px;  
+}
+
+.agenda-icon {
+  color: white;         
+  transition: transform 0.3s ease;
+}
+
+.agenda-container:hover .agenda-icon {
+  transform: rotate(5deg); 
+  color: #2563eb;             
+}
+.footer4 h1{
+  text-align: center;
+  color: white;
+}
