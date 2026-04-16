@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./produits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+</head>
+
 <body>
     <header>
-<div class="top-header">
-  <div class="logo"><span class="logo1">🌿</span> Éclat Naturel
-    
-  </div>
- <div class="form">
-    <input type="text" placeholder="Rechercher un produit" >
-    <i class="fas fa-search"></i>
-</div>
-<div class="menu">
-    <a href="">Mon compte</a>
-    <a href="">Panier</a>
-</div>
-</div>
-<div class="bottom-header">
-   <nav class="menu1">
-  <a href="">Accueil</a>
-  <a href=""><span class="menu2">Produits</span></a>
-  <a href="">Promotions</a>
-  <a href="">Conseils Santé</a>
-  <a href="">Mon compte</a>
-  <a href="">Panier</a>
-</nav> 
-</div>
+        <div class="top-header">
+            <div class="logo"><span class="logo1">🌿</span> Éclat Naturel
+
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Rechercher un produit">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="menu">
+                <a href="">Mon compte</a>
+                <a href="">Panier</a>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <nav class="menu1">
+                <a href="">Accueil</a>
+                <a href=""><span class="menu2">Produits</span></a>
+                <a href="">Promotions</a>
+                <a href="">Conseils Santé</a>
+                <a href="">Mon compte</a>
+                <a href="">Panier</a>
+            </nav>
+        </div>
     </header>
     <section class="produit">
-<h1>Nos Produits</h1>
-<p>Découvrez notre sélection de produit naturels de qualité</p>
+        <h1>Nos Produits</h1>
+        <p>Découvrez notre sélection de produit naturels de qualité</p>
     </section>
     <section class="produits">
         <div class="stop">
@@ -42,17 +46,69 @@
                 <h1>Catégories</h1>
                 <aside>
                     <ul class="list">
-                    <li><span class="list1">Tout les produits</span></li>
-                     <li>Savons</li>
-                    <li>Pommade/Hydratation</li>
-                    <li>Beurres & Huiles</li>
-                    <li>Coffrets</li>
-                    <li>Accesoires</li>
-                </ul>
+                        <li class="active">Tout les produits</li>
+                        <li>Savons</li>
+                        <li>Pommade/Hydratation</li>
+                        <li>Beurres & Huiles</li>
+                        <li>Coffrets</li>
+                        <li>Accesoires</li>
+                    </ul>
                 </aside>
             </div>
+            <div class="stp">
+                <div class="img">
+                    <img src="./IMAGES/beurre_karité.jpeg" alt="">
+                    <h1>Beurre de Karité</h1>
+                    <p>Hydrate et adoucit</p>
+                    <h3>2000FCFA</h3>
+                    <a href=""><button>Ajouter</button></a>
+                </div>
+                <div class="img">
+                    <img src="./IMAGES/pommade_natrelle.jpeg" alt="">
+                    <h1>Pommade Naturelle</h1>
+                    <p>Protège et adoucit</p>
+                    <h3>3000FCFA</h3>
+                    <a href=""><button>Ajouter</button></a>
+                </div>
+            </div>
         </div>
-
     </section>
+    <main class="page-boutique">
+        <aside class="barre-laterale">
+            <h2 class="titre-filtre">Filtre par prix</h2>
+            <div class="affichage-prix">0FCFA - 10000FCFA</div>
+            <div class="curseur-prix">
+                <input type="range">
+            </div>
+        </aside>
+
+        <section class="grille-produits">
+            <article class="carte-produit">
+                <div class="conteneur-image">
+                    <img src="./IMAGES/savon_purifiant_naturel.png" alt="Savon Purifiant Naturel">
+                </div>
+                <div class="details-produit">
+                    <h3 class="nom-produit">Savon Purifiant Naturel</h3>
+                    <p class="description-courte">Nettoie en profondeur</p>
+                    <p class="prix-produit">2500FCFA</p>
+                    <button class="bouton-ajouter">Ajouter</button>
+                </div>
+            </article>
+
+            <article class="carte-produit">
+                <div class="conteneur-image">
+                    <img src="./IMAGES/huile_coco.jpeg" alt="Huile de Coco">
+                </div>
+                <div class="details-produit">
+                    <h3 class="nom-produit">Huile de Coco</h3>
+                    <p class="description-courte">Hydrate, nourrit et protège</p>
+                    <p class="prix-produit">2500FCFA</p>
+                    <button class="bouton-ajouter">Ajouter</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
 </body>
+
 </html>
