@@ -54,6 +54,9 @@
 header{
     display: flex;
     flex-direction: column;
+    z-index: 1000;
+  position: sticky;
+  top: 0;
 }
 .menu1{
     display: flex;
