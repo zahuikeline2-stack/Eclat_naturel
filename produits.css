@@ -310,3 +310,54 @@ input[type="range"]::-moz-range-track {
   background: #2E7D32;
   border-radius: 3px;
 }
+/* Le titre "Catégories" en vert */
+.titre-principal {
+    color: #1a4325; /* Un vert foncé naturel */
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Enlever les puces par défaut de la liste */
+.liste-categories {
+    list-style: none;
+    padding: 0;
+}
+
+/* Espacement entre chaque ligne */
+.liste-categories li {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center; /* Aligne le point avec le texte */
+    cursor: pointer;
+}
+
+/* Style pour l'item sélectionné (Tout les produits) */
+.item-actif {
+    color: #1a4325 !important;
+}
+
+/* Création des petits points ronds */
+.point {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%; /* Rend le carré rond */
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Couleurs des points */
+.vert-fonce {
+    background-color: #1a4325;
+}
+
+.gris {
+    background-color: #d1d1d1;
+}
+
+/* Petit effet quand on passe la souris dessus */
+.liste-categories li:hover {
+    opacity: 0.7;
+}

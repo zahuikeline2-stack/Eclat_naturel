@@ -40,39 +40,51 @@
         <h1>Nos Produits</h1>
         <p>Découvrez notre sélection de produit naturels de qualité</p>
     </section>
-    <section class="produits">
-        <div class="stop">
-            <div class="stops">
-                <h1>Catégories</h1>
-                <aside>
-                    <ul class="list">
-                        <li class="active">Tout les produits</li>
-                        <li>Savons</li>
-                        <li>Pommade/Hydratation</li>
-                        <li>Beurres & Huiles</li>
-                        <li>Coffrets</li>
-                        <li>Accesoires</li>
-                    </ul>
-                </aside>
-            </div>
-            <div class="stp">
-                <div class="img">
-                    <img src="./IMAGES/beurre_karité.jpeg" alt="">
-                    <h1>Beurre de Karité</h1>
-                    <p>Hydrate et adoucit</p>
-                    <h3>2000FCFA</h3>
-                    <a href=""><button>Ajouter</button></a>
+    <main class="page-boutique">
+        <aside class="barre-laterale">
+            <div class="conteneur-menu">
+        <h1 class="titre-principal">Catégories</h1>
+        
+        <ul class="liste-categories">
+            <li class="item-actif">
+                <span class="point vert-fonce"></span>
+                Tout les produits
+            </li>
+            
+            <li><span class="point gris"></span>Savons</li>
+            <li><span class="point gris"></span>Pommade/Hydratation</li>
+            <li><span class="point gris"></span>Beurres & Huiles</li>
+            <li><span class="point gris"></span>Coffrets</li>
+            <li><span class="point gris"></span>Accesoires</li>
+        </ul>
+    </div>
+        </aside>
+
+        <section class="grille-produits">
+            <article class="carte-produit">
+                <div class="conteneur-image">
+                    <img src="./IMAGES/savon_purifiant_naturel.png" alt="Savon Purifiant Naturel">
                 </div>
-                <div class="img">
-                    <img src="./IMAGES/pommade_natrelle.jpeg" alt="">
-                    <h1>Pommade Naturelle</h1>
-                    <p>Protège et adoucit</p>
-                    <h3>3000FCFA</h3>
-                    <a href=""><button>Ajouter</button></a>
+                <div class="details-produit">
+                    <h3 class="nom-produit">Savon Purifiant Naturel</h3>
+                    <p class="description-courte">Nettoie en profondeur</p>
+                    <p class="prix-produit">2500FCFA</p>
+                     <a href=""><button class="bouton-ajouter">Ajouter</button></a>
+
+            </article>
+            <article class="carte-produit">
+                <div class="conteneur-image">
+                    <img src="./IMAGES/huile_coco.jpeg" alt="Huile de Coco">
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="details-produit">
+                    <h3 class="nom-produit">Huile de Coco</h3>
+                    <p class="description-courte">Hydrate, nourrit et protège</p>
+                    <p class="prix-produit">2500FCFA</p>
+                    <a href=""><button class="bouton-ajouter">Ajouter</button></a>
+                </div>
+            </article>
+        </section>
+    </main>
     <main class="page-boutique">
         <aside class="barre-laterale">
             <h2 class="titre-filtre">Filtre par prix</h2>
@@ -91,10 +103,9 @@
                     <h3 class="nom-produit">Savon Purifiant Naturel</h3>
                     <p class="description-courte">Nettoie en profondeur</p>
                     <p class="prix-produit">2500FCFA</p>
-                    <button class="bouton-ajouter">Ajouter</button>
-                </div>
-            </article>
+                     <a href=""><button class="bouton-ajouter">Ajouter</button></a>
 
+            </article>
             <article class="carte-produit">
                 <div class="conteneur-image">
                     <img src="./IMAGES/huile_coco.jpeg" alt="Huile de Coco">
@@ -103,7 +114,7 @@
                     <h3 class="nom-produit">Huile de Coco</h3>
                     <p class="description-courte">Hydrate, nourrit et protège</p>
                     <p class="prix-produit">2500FCFA</p>
-                    <button class="bouton-ajouter">Ajouter</button>
+                    <a href=""><button class="bouton-ajouter">Ajouter</button></a>
                 </div>
             </article>
         </section>
