@@ -1,4 +1,8 @@
-.top-header{
+*{
+    margin: 0;
+    padding: 0;
+   } 
+   .top-header{
   background:#2E7D32;
   color:white;
   display:flex;
@@ -481,3 +485,7 @@ margin-top: 20%;
   text-align: center;
   color: white;
 }
+footer{
+    margin-top: 10%;
+}
+

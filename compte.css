@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+.bottom-header{
+    background: white;
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.1) ;
+    width: 100%;
+  height: 70px;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+.menu1{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #2E7D32;
+        
+    }
+}
+.menu2{
+    color: #1B5E20;
+    font-size: 20px;
+}
+.barre-navigation {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.barre-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.barre-navigation a {
+    text-decoration: none;
+    color: #4b6343;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.conteneur-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+}
+
+.carte-connexion {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.entete-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.logo-cercle {
+    background-color: #2d6a2e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-cercle img {
+    width: 30px;
+}
+
+.titre-marque h1 {
+    color: #1B5E20;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.titre-marque p {
+    color: #2E7D32;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.souhaite-bienvenue {
+    color: #2d6a2e;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+.instruction {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.groupe-champ {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.groupe-champ label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+.groupe-champ input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+
+.lien-oubli {
+    text-align: right;
+    margin-bottom: 30px;
+}
+.lien-oubli a {
+    color: #2d6a2e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.bouton-connexion {
+    background-color: #1a5c1b;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 60%;
+    transition: background 0.3s;
+}
+
+.bouton-connexion:hover {
+    background-color: #2d6a2e;
+}
+
+.pied-formulaire {
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+.lien-inscription {
+    color: orange;
+    text-decoration: underline;
+    margin-left: 5px;
+}
