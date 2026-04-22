@@ -86,7 +86,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
    height: 900px;
-   margin-top: -45px;
 }
 .hero-text{
     h1{
@@ -126,9 +125,9 @@ button{
   background: #F1F8F4;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 10%;
+  margin-left: 4%;
+  margin-right: 2%;
 }
 
 .feature {
@@ -170,14 +169,11 @@ color: #2E7D32;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
-
-
 .card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
   color: black;
   margin-left: 1%;
-  
 }
 
 .prix {
@@ -188,7 +184,6 @@ color: #2E7D32;
   align-items: center;
   margin-left: 5%;
 }
-
 .ajouter {
   background: #2e7d32;
   color: white;
@@ -199,7 +194,6 @@ color: #2E7D32;
   cursor: pointer;
   margin-right: 10%;
 }
-
 button:hover {
   background: #1b5e20;
 }
@@ -218,15 +212,11 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
 }
-
-
 .card1 img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
-
-
 .card1 h3 {
   font-size: 18px;
   margin: 10px 0 5px;
@@ -234,9 +224,6 @@ button:hover {
   margin-left: 1%;
   
 }
-
-
-
 .prix {
   color: orange;
   font-weight: bold;
@@ -256,7 +243,6 @@ button:hover {
   cursor: pointer;
   margin-right: 10%;
 }
-
 button:hover {
   background: #1b5e20;
 }
@@ -275,8 +261,6 @@ button:hover {
     justify-content: space-around;
     margin-top: 10%;
 }
-
-
 .conseils{
   background-image: url(./IMAGES/ACCUEIL_FEMME.png);
   background-size: cover;
@@ -288,7 +272,6 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   align-items: flex-start;
   padding: 40px;
-
 }
 .tite{
   color: #2E7D32;
@@ -348,11 +331,10 @@ li {
   font-size: 50px;
   color: #2E7D32;
   text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
-
 }
 .ofres{
   background-color: #FF8F00;
-  margin-top: 5%;
+  margin-top: 30%;
   margin-left: 30%;
   border-radius: 3%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -367,7 +349,6 @@ footer{
 color: white;
   transition: all 0.3s ease;
 }
-
 .instagram-icon:hover {
   color: #C13584; 
   transform: scale(1.1);
@@ -385,7 +366,6 @@ color: white;
   color: #25D366; 
   transition: all 0.3s ease;
 }
-
 .whatsapp-icon:hover {
   color: #128C7E; 
   transform: scale(1.1); 
@@ -418,7 +398,6 @@ margin-top: 20%;
   padding-top: 10px;  
  
 }
-
 .phone-number {
   font-size: 1.1rem;
 }
@@ -426,7 +405,6 @@ margin-top: 20%;
 .phone:hover {
   color: #007aff;
 }
-
 .phone:hover .phone-icon {
   transform: rotate(-15deg);
 }
@@ -438,15 +416,12 @@ margin-top: 20%;
   transition: all 0.3s ease;
   padding-top: 10px;  
 }
-
 .email:hover {
   color: #2563eb;      
 }
-
 .email-icon {
   transition: transform 0.3s ease;
 }
-
 .email:hover .email-icon {
   transform: translateY(-2px); 
 }
@@ -456,12 +431,10 @@ margin-top: 20%;
   color: white; 
  padding-top: 10px;        
 }
-
 .location-icon {
   color: white;       
   transition: transform 0.3s ease;
 }
-
 .location-container:hover .location-icon {
   transform: translateY(-3px); 
 }
@@ -471,12 +444,10 @@ margin-top: 20%;
   font-weight: bold;
   padding-top: 10px;  
 }
-
 .agenda-icon {
   color: white;         
   transition: transform 0.3s ease;
 }
-
 .agenda-container:hover .agenda-icon {
   transform: rotate(5deg); 
   color: #2563eb;             

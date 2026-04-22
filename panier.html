@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>panier</title>
+    <link rel="stylesheet" href="./panier.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -27,120 +26,102 @@
 </div>
 <div class="bottom-header">
    <nav class="menu1">
-  <a href=""><span class="menu2">Accueil</span></a>
+  <a href="">Accueil</a>
   <a href="">Produits</a>
   <a href="">Promotions</a>
   <a href="">Conseils Santé</a>
   <a href="">Mon compte</a>
-  <a href="">Panier</a>
+  <a href=""><span class="menu2">Panier</span></a>
 </nav> 
 </div>
     </header>
-    <!-- HERO -->
+    <main>
+        <div class="panier">
+            <h1>Votre Panier</h1>
+            <p>Vérifiez vos articles avant de passer commande.</p>
+        </div>
+        <section class="panier-conteneur">
+    <div class="liste-produits">
+        <div class="entete-tableau">
+            <span>Produit</span>
+            <span>Prix</span>
+            <span>Quantité</span>
+            <span>Total</span>
+        </div>
 
-  <div class="hero">
-<div class="hero-text">
-    <h1>Prenez soin de <br> votre corps</h1>
-   <h2>naturellement</h2>
-  <p>Des produit pur des conseils <br> sains une beaute qui dure.</p>
-    <button>Découvrir nos produits</button>
-  </div>
-  <div class="features">
-  <div class="feature">
-    <h3>Produits 100% naturels</h3>
-    <p>Respectueux de votre peau</p>
-  </div>
+        <div class="carte-produit">
+            <div class="image-produit">
+                <img src="./IMAGES/Coffret_soin_complet.png" alt="">
+            </div>
+            <div class="prix">8000 FCFA</div>
+            <div class="selecteur-quantite">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+            <div class="total-ligne">0 FCFA</div>
+        </div>
 
-  <div class="feature">
+        <div class="carte-produit">
+            <div class="image-produit">
+               <img src="./IMAGES/savon_curcuma.jpeg" alt="">
+            </div>
+            <div class="prix">3000 FCFA</div>
+            <div class="selecteur-quantite">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+            <div class="total-ligne">0 FCFA</div>
+        </div>
+
+        <div class="carte-produit">
+            <div class="image-produit">
+                <img src="./IMAGES/Pommade_anti_tache.png" alt="">
+            </div>
+            <div class="prix">3500 FCFA</div>
+            <div class="selecteur-quantite">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+            <div class="total-ligne">0 FCFA</div>
+        </div>
+    </div>
+
+   <div class="resume-commande">
+        <h3>Résumé de commande</h3>
+        <div class="ligne-resume">
+            <span>Sous-total</span>
+            <strong>0 FCFA</strong>
+        </div>
+        <div class="ligne-resume">
+            <span>Livraison</span>
+            <strong>0 FCFA</strong>
+        </div>
+        <div class="ligne-total-final">
+            <span>Total</span>
+            <strong>0 FCFA</strong>
+        </div>
+        <a href=""><button class="bouton-commander">Passer Commande</button></a>
+        </div>
     
-    <h3>🚚Livraison rapide</h3>
-    <p>Partout en Côte d’Ivoire</p>
-  </div>
-  <div class="feature">
-    <h3>👤Conseils personnalisés</h3>
-    <p>Pour votre bien-être</p>
-  </div>
-</div>
-  </div>
-  <section class="produit">
-    <h2>NOS PRODUITS 🌿</h2>
-
-  </section>
-  <section class="produit-img">
-    <div class="card">
-  <img src="./IMAGES/savon_purifiant_naturel.png" alt="">
-
-  <h3>Savon Purifiant Naturel</h3>
-  <p class="desc">Nettoie en profondeur</p>
-
-  <p class="prix">2500f</p>
-
-  <a href="">
-    <button class="ajouter">Ajouter</button>
-  </a>
-</div>
-<div class="card1">
-  <img src="./IMAGES/savon_curcuma.jpeg" alt="">
-  <h3>Savon Purifiant Naturel</h3>
-  <p class="desc">Nettoie en profondeur</p>
-
-  <p class="prix">2500f</p>
-
-  <a href="">
-    <button class="ajouter">Ajouter</button>
-  </a>
-</div>
-  </section>
-  <section class="produit-img1">
-    <div class="card">
-  <img src="./IMAGES/beurre_karité.jpeg" alt="">
-  <h3>Savon Purifiant Naturel</h3>
-  <p class="desc">Nettoie en profondeur</p>
-
-  <p class="prix">2500f</p>
-
-  <a href="">
-    <button class="ajouter">Ajouter</button>
-  </a>
-</div>
-<div class="card1">
-  <img src="./IMAGES/coffret_eclat_naturel.png" alt="">
-
-  <h3>Savon Purifiant Naturel</h3>
-  <p class="desc">Nettoie en profondeur</p>
-
-  <p class="prix">2500f</p>
-
-  <a href="">
-    <button class="ajouter">Ajouter</button>
-  </a>
-</div>
-  </section>
-  <section class="promo-section">
-  <div class="conseils">
-    <h1 class="tite">Conseils santé</h1>
-    <p class="text-conseils">Prenez soin de votre corps nous  vous guidons</p>
-    <ul class="lis-conseils">
-      <li><span class="lis">✓</span>Hygène quotidienne</li>
-      <li><span class="lis">✓</span>Soins de la peau</li>
-      <li><span class="lis">✓</span>Astuce bien-etre</li>
-    </ul>
-    <a href="">
-    <button class="article">Lire Nos Articles</button>
-  </a>
-  </div>
-  <div class="promo">
-    <h1 class="til-promo">Promotions</h1>
-    <p class="promos">Des offres spéciales rien que pour vous!</p>
-    <h3 class="promos">jusqu’a</h3>
-    <h1 class="tile-promo">-20%</h1>
-<p class="promos">sur une selection de produits</p>
-<a href="">
-    <button class="ofres">Voir les offres</button>
-  </a>
-  </div>
 </section>
-  <footer>
+<div class="filtre">
+   <div class="bouton-continue"><a href=""><button>Continuer mes achats</button></a></div>
+   <div class="bouton-vite"><a href=""><button>Vider le panier</button></a></div>
+</div>
+<section class="disponibilites">
+   <div class="disponibilite">
+     <h1>Livraison rapide : Partout en Côte d'Ivoire Paiement sécurisé : 100% sécurisé</h1>
+    <h2>Satisfait ou remboursé : Sous 7 jours</h2>
+
+   </div>
+
+</section>
+
+    </main>
+    <footer>
   <div class="fots">
     <div class="footer1">
 <div class="logo"><span class="logo1">🌿</span> Éclat Naturel

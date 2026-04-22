@@ -32,13 +32,6 @@ header{
     color: #1B5E20;
     font-size: 20px;
 }
-.conteneur-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh; 
-}
-
 .carte-connexion {
     background-color: white;
     width: 100%;
@@ -48,7 +41,6 @@ header{
      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 
 }
-
 .entete-logo {
     display: flex;
     align-items: center;
@@ -66,7 +58,6 @@ header{
     align-items: center;
     justify-content: center;
 }
-
 .titre-marque h1 {
     color: #1B5E20;
     margin: 0;
@@ -78,7 +69,6 @@ header{
     margin: 0;
     font-size: 0.9rem;
 }
-
 .souhaite-bienvenue {
     color: #2d6a2e;
     font-size: 2.2rem;
@@ -88,16 +78,15 @@ header{
     color: black;
     margin-bottom: 30px;
 }
-
 .groupe-champ {
     text-align: left;
     margin-bottom: 20px;
 }
 .groupe-champ label {
-    display: block;
+    display: flex;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #333;
+    color: black;
 }
 .groupe-champ input {
     width: 100%;
@@ -106,18 +95,6 @@ header{
     border-radius: 5px;
     box-sizing: border-box;
     background-color: #f9f9f9;
-}
-
-
-.lien-oubli {
-    text-align: right;
-    margin-bottom: 30px;
-}
-.lien-oubli a {
-    color: #2d6a2e;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: bold;
 }
 .bouton-connexion {
     background-color: #1a5c1b;
@@ -129,18 +106,16 @@ header{
     cursor: pointer;
     width: 60%;
     transition: background 0.3s;
+    margin-top: 4%;
 }
-
-.bouton-connexion:hover {
-    background-color: #2d6a2e;
-}
-
 .pied-formulaire {
     margin-top: 40px;
     font-size: 0.9rem;
 }
-.lien-inscription {
-    color: orange;
-    text-decoration: underline;
-    margin-left: 5px;
+.pied-formulaire a {
+    text-decoration: none;
+    color: black;
+}
+.carte-connexion{
+margin:10% auto;
 }

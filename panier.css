@@ -58,7 +58,7 @@
 header{
     display: flex;
     flex-direction: column;
-  z-index: 1000;
+    z-index: 1000;
   position: sticky;
   top: 0;
 }
@@ -78,104 +78,164 @@ header{
     color: #1B5E20;
     font-size: 20px;
 }
-.promo h1{
-    text-align: center;
-    font-size: 50px;
+.panier h1{
     color: #1B5E20;
-    cursor: pointer;
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.1) ;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1) ;
+    font-size: 3rem;
+    margin: 3% auto;
+    margin-left: 10%;
 }
-.sect{
+.panier p{
+    color: #2E7D32;
+  margin-top: -2%;
+    margin-left: 5%;
+    font-size: 1.4rem;
+}
+.panier-conteneur {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.liste-produits {
+    flex: 3;
+}
+
+.entete-tableau {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-weight: bold;
+    color: #1B5E20;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.carte-produit {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.image-produit img {
     width: 20%;
-    border-radius: 15px;
+    height: 5%;
+    object-fit: cover;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.selecteur-quantite {
     display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
-    flex: 0 0 auto;
-    flex-shrink: 0;
-    flex-basis: auto;
-    margin-top: 2%;
+    align-items: center;
+    background:#F2F2F2;
+    border-radius: 5px;
+    width: 25%;
+    padding: 2px 5px;
 }
-img{
-    width: 100%;
-  box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
-  border-radius: 15px 15px 0 0;
-}
-.sect h1{
-    text-align: center;
-}
-.sect p{
-    display: flex;
-    justify-content: space-around;
-}
-.barrer{
-   text-decoration: line-through;
-}
-.ol{
-    color: orange;
+
+.selecteur-quantite button {
+    border: none;
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
     font-weight: bold;
 }
-.sect a button{
-    background-color: #2E7D32;
-  color: white;
-  border: none;
-  padding: 10px 40px;
-  margin-left: 25%;
-  margin-bottom: 5%;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 50%;
-  transition: background 0.3s;
+
+.selecteur-quantite span {
+    margin: 0 10px;
 }
-.promotion{
-    display: flex;
-    justify-content: space-around;
+
+.resume-commande {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
 }
-.promotin1{
-    display: flex;
-    justify-content: center;
-}
-.sect {
-    position: relative;
-}
-.boton{
-    position: absolute;
-   margin-left: 89%;
-   margin-top: 1%;
-   padding: 2%;
-   background-color: #2E7D32;
-   color: white;
-   border: none;
-   border-radius: 10px;
- cursor: pointer;
-}
-.livraisons{
-    width: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    background-color: #2E7D32;
-    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.2);
-    flex: 0 0 auto;
-    flex-shrink: 0;
-    flex-basis: auto;
-    margin-top: 2%;
-}
-.livraisons h1{
-    color: white;
+
+.resume-commande h3 {
+    color:#1B5E20;
     text-align: center;
-    gap: 100px;
 }
-.livraison{
+
+.ligne-resume, .ligne-total-final {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 9%;
 }
-.livraisons p{
-    text-align: center;
+
+.ligne-resume strong, .ligne-total-final strong {
+    color: #2E7D32;
+}
+
+.bouton-commander {
+    width: 100%;
+    background-color: #2E7D32;
     color: white;
-    font-size: 30px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bouton-commander:hover {
+    background-color: #1B5E20;
+}
+.filtre{
+    display: flex;
+    justify-content: space-between;
+}
+.bouton-continue a button{
+    background-color: #60D669;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+.bouton-continue a button:hover{
+    background-color: #38a638;
+}
+.bouton-continue a button:active{
+    transform: scale(0.98);
+}
+.bouton-vite a button{
+    background-color: #f0f0f0;
+    color:  #FF0000;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+.disponibilites{
+     margin-top: 5%;
+     border-radius: 15px;
+     background-color: white;
+     padding: 2%;
+     width: 53%;
+     margin: 2% auto;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.disponibilite h1{
+    color: #2E7D32;
+}
+.disponibilite h2{
+    text-align: center;
+    color: #2E7D32;
 }
 footer{
   background-color: #2E7D32;
@@ -187,7 +247,6 @@ footer{
 color: white;
   transition: all 0.3s ease;
 }
-
 .instagram-icon:hover {
   color: #C13584; 
   transform: scale(1.1);
@@ -205,7 +264,6 @@ color: white;
   color: #25D366; 
   transition: all 0.3s ease;
 }
-
 .whatsapp-icon:hover {
   color: #128C7E; 
   transform: scale(1.1); 
@@ -238,7 +296,6 @@ margin-top: 20%;
   padding-top: 10px;  
  
 }
-
 .phone-number {
   font-size: 1.1rem;
 }
@@ -246,7 +303,6 @@ margin-top: 20%;
 .phone:hover {
   color: #007aff;
 }
-
 .phone:hover .phone-icon {
   transform: rotate(-15deg);
 }
@@ -258,15 +314,12 @@ margin-top: 20%;
   transition: all 0.3s ease;
   padding-top: 10px;  
 }
-
 .email:hover {
   color: #2563eb;      
 }
-
 .email-icon {
   transition: transform 0.3s ease;
 }
-
 .email:hover .email-icon {
   transform: translateY(-2px); 
 }
@@ -276,12 +329,10 @@ margin-top: 20%;
   color: white; 
  padding-top: 10px;        
 }
-
 .location-icon {
   color: white;       
   transition: transform 0.3s ease;
 }
-
 .location-container:hover .location-icon {
   transform: translateY(-3px); 
 }
@@ -291,12 +342,10 @@ margin-top: 20%;
   font-weight: bold;
   padding-top: 10px;  
 }
-
 .agenda-icon {
   color: white;         
   transition: transform 0.3s ease;
 }
-
 .agenda-container:hover .agenda-icon {
   transform: rotate(5deg); 
   color: #2563eb;             
@@ -310,3 +359,5 @@ footer{
 }
 
 
+
+    
