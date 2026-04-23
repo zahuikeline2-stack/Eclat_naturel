@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Éclat Naturel - Connexion</title>
     <link rel="stylesheet" href="./comptes.css">
-    <script src="./compte.js"></script>
+    
 </head>
 <body>
      <header>
@@ -36,30 +36,32 @@
          <form id="formulaire-connexion">
             <div class="groupe-champ">
                 <label for="nom">Nom</label>
-                <input type="text" placeholder="Votre nom">
+                <input type="text" id="nom" placeholder="Votre nom">
 
             </div>
                 <div class="groupe-champ">
                     <label for="courriel">Email</label>
-                    <input type="email" id="courriel" placeholder="Votre email" required>
+                    <input type="email" id="courriel" placeholder="Votre email">
                 </div>
                 <div class="groupe-champ">
                     <label for="numero">Télephone</label>
-                    <input type="tel" placeholder="Votre conctat">
+                    <input type="tel" id="numero" placeholder="Votre conctat" >
 
                 </div>
 
                 <div class="groupe-champ">
                     <label for="mot-de-passe">Mot de passe</label>
-                    <input type="password" id="mot-de-passe" placeholder="Votre mot de passe" required>
+                    <input type="password" id="mot-de-passe" placeholder="Votre mot de passe">
                 </div>
 
-                <a href="./index.html"> <button type="submit" class="bouton-connexion">S’ inscrit</button></a>
+                <button type="submit" class="bouton-connexion" id="bouton_enregistrer">S’ inscrit</button>
 
             </form> 
             <div class="pied-formulaire">
                 <a href="" class="lien-inscription">Déja un compte?</a>
             </div>  
+            <p id="messages"></p>
+            <p id="erreur"></p>
 
         </section>
 
@@ -67,4 +69,5 @@
 
     </main>
 </body>
+<script src="./compte.js"></script>
 </html>
