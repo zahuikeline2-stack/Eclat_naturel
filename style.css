@@ -460,3 +460,116 @@ footer{
     margin-top: 10%;
 }
 
+
+
+/* TABLETTE */
+@media (max-width: 1024px) {
+
+  .produit-img,
+  .produit-img1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card,
+  .card1 {
+    width: 45%;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .feature {
+    flex: 1 1 40%;
+  }
+
+  .promo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .form {
+    width: 100%;
+  }
+.form input{
+  padding-left: 5px;
+}
+  .hero {
+    height: auto;
+    padding: 40px 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .card,
+  .card1 {
+    width: 90%;
+  }
+
+  .produit {
+    font-size: 40px;
+  }
+
+  .conseils,
+  .promo {
+    width: 90%;
+    height: auto;
+  }
+
+  .fots {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .article {
+    margin-left: 0;
+    width: 90%;
+  }
+
+}
+
+
+
+
+
+
+
+
