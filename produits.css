@@ -374,3 +374,151 @@ footer{
 }
 
 
+
+
+
+
+/* 1. ÉCRANS LARGES (Desktops & TV) - On stabilise la largeur max */
+@media screen and (min-width: 1400px) {
+    header, .sect2, .sect3, footer {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* 2. TABLETTES ET PETITS LAPTOPS (max 1024px) */
+@media screen and (max-width: 1024px) {
+    .sect2, .sect3 {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .img, .img2 {
+        width: 45%; /* On passe à 2 colonnes */
+    }
+
+    .produit h1 {
+        font-size: 4rem;
+    }
+
+    .img1 {
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* 3. SMARTPHONES XL ET PORTRAIT TABLETTE (max 768px) */
+@media screen and (max-width: 768px) {
+    /* Menu Burger (Logique de survol pour navigation mobile) */
+    .top-header {
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .menu {
+        cursor: pointer;
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        display: none; /* Cache les liens */
+    }
+
+    /* Dessin des 3 barres du burger */
+    .menu::before, .menu::after, .menu::placeholder {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+    
+
+    .menu::before { box-shadow: 0 11px 0 0 white; }
+
+    .menu:hover {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 200px;
+        height: auto;
+        background: #1B5E20;
+        padding: 20px;
+        z-index: 5000;
+        border-radius: 10px;
+    }
+
+    .menu:hover a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .menu:hover::before, .menu:hover::after { display: none; }
+
+    /* Ajustement du contenu */
+    .produit h1 {
+        font-size: 2.8rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .produit p {
+        font-size: 1.2rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .sect2, .sect3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .img, .img2, .img1 {
+        width: 90%; /* Une seule colonne sur mobile */
+    }
+
+    .img a button, .img2 a button {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* Footer en colonne */
+    .fots {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+/* 4. PETITS SMARTPHONES (max 480px) */
+@media screen and (max-width: 480px) {
+    .logo, .logo1 {
+        font-size: 20px;
+    }
+
+    .form {
+        width: 140px; /* On réduit la barre de recherche */
+    }
+
+    .menu1 {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .produit h1 {
+        font-size: 2rem;
+    }
+}

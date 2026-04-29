@@ -144,3 +144,64 @@ header{
     text-decoration: underline;
     margin-left: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .conteneur-principal {
+        min-height: 90vh; /* On donne un peu plus d'espace vertical */
+        padding: 20px;
+    }
+
+    .carte-connexion {
+        padding: 30px 20px; /* On réduit les marges internes */
+        box-shadow: none; /* Sur mobile, un design plus plat est souvent plus moderne */
+        border: 1px solid #eee;
+    }
+
+    .souhaite-bienvenue {
+        font-size: 1.8rem; /* On réduit la taille du titre bienvenue */
+    }
+
+    .menu1 {
+        gap: 15px; /* On resserre le menu secondaire */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Pour les petits smartphones (max 480px) */
+@media screen and (max-width: 480px) {
+    .entete-logo {
+        flex-direction: column; /* Logo et Texte l'un sur l'autre */
+        gap: 10px;
+    }
+
+    .logo-cercle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .titre-marque h1 {
+        font-size: 1.5rem;
+    }
+
+    .bouton-connexion {
+        width: 100%; /* Le bouton prend toute la largeur pour faciliter le clic au pouce */
+        padding: 15px;
+    }
+
+    .instruction {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .bottom-header {
+        height: auto; /* Permet au menu de s'adapter si les liens passent sur deux lignes */
+    }
+}
+
+/* Optimisation pour les écrans très larges (écrans 2K/4K) */
+@media screen and (min-width: 1440px) {
+    .carte-connexion {
+        max-width: 500px; /* On donne un peu plus d'aisance sur les très grands écrans */
+    }
+}
