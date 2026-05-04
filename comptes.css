@@ -122,68 +122,64 @@ margin:10% auto;
 
 
 
-/* Pour les tablettes et petits écrans (max 768px) */
-@media screen and (max-width: 768px) {
+/* 1. Écrans larges et TV (Empêche l'étirement excessif) */
+@media (min-width: 1400px) {
+    .menu1 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* 2. Tablettes et Laptops (max 1024px) */
+@media (max-width: 1024px) {
     .carte-connexion {
-        width: 85%; /* On donne de l'air sur les côtés */
-        margin: 15% auto;
-        padding: 30px;
+        margin: 5% auto;
+        width: 80%;
+    }
+}
+
+/* 3. Smartphones (max 768px) */
+@media (max-width: 768px) {
+    .bottom-header {
+        height: auto; 
+    }
+
+    .menu1 {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .carte-connexion {
+        width: 90%;
+        padding: 25px; 
+        margin: 10% auto;
+        max-width: none;
     }
 
     .souhaite-bienvenue {
         font-size: 1.8rem;
     }
 
-    .menu1 {
-        flex-wrap: wrap; /* On évite que le menu ne déborde */
-        gap: 15px;
+    .bouton-connexion {
+        width: 100%; 
     }
 }
 
-/* Pour les smartphones (max 480px) */
-@media screen and (max-width: 480px) {
-    .carte-connexion {
-        width: 90%;
-        margin: 20% auto;
-        padding: 20px;
-        box-shadow: none; /* Look plus "flat" et moderne sur mobile */
-        border: 1px solid #eee;
-    }
-
+/* 4. Très petits téléphones (max 480px) */
+@media (max-width: 480px) {
     .entete-logo {
-        flex-direction: column; /* On empile le logo et le texte */
+        flex-direction: column;
         gap: 10px;
     }
 
     .titre-marque h1 {
-        font-size: 1.4rem;
-    }
-
-    .souhaite-bienvenue {
         font-size: 1.5rem;
     }
 
-    .bouton-connexion {
-        width: 100%; /* Plus facile à cliquer avec le pouce */
-        padding: 15px;
-    }
-
-    .groupe-champ input {
-        padding: 15px; /* Champs plus grands pour une meilleure saisie tactile */
-    }
-
-    .menu1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Menu sur deux colonnes */
-        text-align: center;
-        gap: 10px;
-    }
-}
-
-/* Optimisation pour les écrans très larges */
-@media screen and (min-width: 1600px) {
     .carte-connexion {
-        max-width: 500px; /* Un peu plus de largeur sur les écrans géants */
-        margin: 5% auto;
+        padding: 20px 15px;
+        box-shadow: none; 
     }
 }

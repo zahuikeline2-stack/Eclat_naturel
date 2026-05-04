@@ -229,93 +229,54 @@ footer{
 
 
 
-/* Pour les tablettes (max 1024px) */
-@media screen and (max-width: 1024px) {
-    .conseil h1 {
-        font-size: 3rem;
-    }
-    .conseil h2 {
-        font-size: 2.2rem;
-    }
-    .conseil p {
-        font-size: 1.5rem;
-    }
+/* --- ADAPTATION POUR TABLETTES (Écrans moyens) --- */
+@media (max-width: 1024px) {
     .fots {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Les éléments du footer passent à la ligne si besoin */
         justify-content: center;
-        gap: 20px;
+        gap: 40px;
     }
+    .conseil h1 { font-size: 3rem; }
+    .conseil h2 { font-size: 2.2rem; }
 }
 
-/* Pour les smartphones (max 768px) */
-@media screen and (max-width: 768px) {
-    /* --- LOGIQUE DU MENU BURGER --- */
+/* --- ADAPTATION POUR SMARTPHONES (Écrans mobiles) --- */
+@media (max-width: 768px) {
     .top-header {
-        position: relative;
-        padding: 10px 20px;
-    }
-
-    .menu {
-        cursor: pointer;
-        width: 30px;
-        height: 25px;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .menu a { display: none; } /* On cache les liens textuels */
-
-    /* Création des barres du burger */
-    .menu::before, .menu::after, .menu::placeholder {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: white;
-        border-radius: 2px;
-        transition: 0.3s;
-    }
-    .menu::before { box-shadow: 0 10px 0 0 white; }
-
-    /* Menu déroulant au survol */
-    .menu:hover {
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        width: 180px;
-        height: auto;
-        background: #1B5E20;
+        gap: 15px;
         padding: 15px;
-        z-index: 5000;
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    }
-
-    .menu:hover a {
-        display: block;
-        font-size: 1.1rem;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
         text-align: center;
     }
 
-    .menu:hover::before, .menu:hover::after { display: none; }
-
-    /* --- ADAPTATION DES TEXTES --- */
-    .conseil h1 {
-        font-size: 2.2rem;
-        padding: 0 10px;
-    }
-    .conseil h2 {
-        font-size: 1.8rem;
-    }
-    .conseil p {
-        font-size: 1.1rem;
-        padding: 0 15px;
+    .form {
+        width: 100%; 
     }
 
-    /* --- FOOTER --- */
+    .menu {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 24px; 
+    }
+
+    .bottom-header {
+        height: auto; 
+    }
+
+    .menu1 {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    /* Texte Conseil */
+    .conseil h1 { font-size: 2.2rem; }
+    .conseil h2 { font-size: 1.8rem; }
+    .conseil p { font-size: 1.2rem; }
+
+    /* Footer */
     .fots {
         flex-direction: column;
         align-items: center;
@@ -325,21 +286,19 @@ footer{
     .footer2 h1 {
         margin-top: 10px;
     }
+
+    .footer1 {
+        padding: 20px;
+    }
 }
 
-/* Pour les petits écrans (max 480px) */
-@media screen and (max-width: 480px) {
+/* --- OPTIMISATION POUR TRÈS PETITS TÉLÉPHONES --- */
+@media (max-width: 480px) {
     .logo, .logo1 {
         font-size: 22px;
     }
-    .form {
-        width: 140px;
-    }
-    .menu1 {
-        gap: 15px;
-        font-size: 14px;
-    }
-    .footer1 p {
-        font-size: 16px;
+    
+    .menu a {
+        font-size: 18px;
     }
 }

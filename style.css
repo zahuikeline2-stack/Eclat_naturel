@@ -460,3 +460,66 @@ footer{
     margin-top: 10%;
 }
 
+
+
+
+
+/* 1. Écrans larges et TV (Évite que le contenu s'étale trop) */
+@media (min-width: 1600px) {
+    .hero-text, .features, .produit-img, .produit-img1, .promo-section, .fots {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* 2. Tablettes et Laptops (max 1200px) */
+@media (max-width: 1200px) {
+    .hero { height: 600px; }
+    .hero-text h1 { font-size: 40px; }
+    .hero-text h2 { font-size: 60px; }
+    .hero-text p { font-size: 35px; }
+
+    .card, .card1 { width: 30%; margin-bottom: 20px; }
+    .produit-img, .produit-img1 { flex-wrap: wrap; }
+}
+
+/* 3. Smartphones (max 768px) */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .top-header { flex-direction: column; gap: 15px; padding: 20px; text-align: center; }
+    .menu { justify-content: center; }
+    .menu1 { flex-direction: column; align-items: center; gap: 10px; }
+    .bottom-header { height: auto; }
+
+    /* Hero Section */
+    .hero { height: 500px; background-position: center; }
+    .hero-text h1 { font-size: 30px; margin-left: 20px; }
+    .hero-text h2 { font-size: 45px; margin-left: 20px; }
+    .hero-text p { font-size: 24px; margin-left: 20px; }
+    button { padding: 15px; font-size: 18px; margin-left: 20px; }
+
+    /* Features */
+    .features { flex-direction: column; gap: 30px; margin-top: 50px; }
+
+    /* Produits */
+    .produit { font-size: 40px; }
+    .card, .card1 { width: 80%; margin: 10px auto; }
+    .produit-img, .produit-img1 { flex-direction: column; }
+
+    /* Promo & Conseils */
+    .promo-section { flex-direction: column; align-items: center; gap: 40px; }
+    .conseils, .promo { width: 90%; height: auto; padding: 30px 15px; }
+    .article, .ofres { margin-left: 0; text-align: center; width: 100%; }
+    
+    /* Footer */
+    .fots { flex-direction: column; align-items: center; text-align: center; gap: 40px; }
+    .footer2 h1 { margin-top: 10px; }
+}
+
+/* 4. Très petits téléphones (max 480px) */
+@media (max-width: 480px) {
+    .hero-text h2 { font-size: 35px; }
+    .tile-promo { font-size: 30px; }
+    .footer1 p { font-size: 16px; }
+}

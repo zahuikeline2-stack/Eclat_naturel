@@ -280,3 +280,88 @@ footer{
 }
 
 
+/* --- ADAPTATION POUR TABLETTES  */
+@media (max-width: 1024px) {
+    .sect {
+        width: 45%; 
+        margin-bottom: 20px;
+    }
+    .promotion {
+        flex-wrap: wrap; 
+    }
+}
+
+/* --- ADAPTATION POUR SMARTPHONES  */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 20px; 
+    }
+
+    .bottom-header {
+        height: auto; 
+    }
+
+    .menu1 {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* Contenu Principal */
+    .conseil h1 {
+        font-size: 2rem;
+    }
+
+    .conseil p {
+        font-size: 1.2rem;
+    }
+
+    .promotion {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .sect {
+        width: 90%; 
+    }
+
+    .article a button {
+        width: 60%; 
+    }
+
+    /* Footer */
+    .fots {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer2 h1 {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo, .logo1 {
+        font-size: 22px;
+    }
+    
+    .form {
+        width: 100%; 
+    }
+}
